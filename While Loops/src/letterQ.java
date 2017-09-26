@@ -3,29 +3,24 @@ public class letterQ
 {
 public static void main(String[] args)
 	{
-		Scanner userInput = new Scanner(System.in);
-		String counter = "q";
-		while(true)
+		Scanner userInput = new Scanner (System.in);
+		
+		boolean keepGoing = true;
+		while(keepGoing)
 			{
-				System.out.println("Whats your input?");
-				String guess =userInput.nextLine();
-
-				for (int i=0; i<= guess.length();)
+				System.out.println("Please type a letter.");  
+				String name = userInput.nextLine();
+				if (name.contains("q"))
 					{
-					if (guess =="q")
-						{
-						counter = "q";	
-						break;
-						}
-					else
-						{
-						System.out.println("nice!");
-			
-						}
-					
-				
+					System.out.println(false);
+					break;
 					}
-				 
+				else
+					{
+					System.out.println(keepGoing);
+					}
 			}
+	
 	}
 }
+
